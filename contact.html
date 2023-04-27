@@ -1,0 +1,88 @@
+<!-------------------
+
+	Do not alter this comment block.
+	Only fill out the information below.
+
+    Project 4
+    Name:Claudio Navarrete
+    Date:2023-04-26
+    Description: Website Development & Deployment
+
+--------------------->
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de contacto</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="contact-form.css">
+  
+  </head>
+
+
+<body>	
+  
+    
+
+	<div class="contact_form">
+
+		<div class="form">			
+      <h1>Contact Form</h1>
+				<h3>Write to us and we will contact you shortly</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="Full Name" class="colocar_nombre">Name
+										<span class="mandatory">*</span>
+									</label>
+										<input type="text" name="input_name" id="name" required="mandatory" placeholder="write your name">
+								</p>
+							
+								<p>
+									<label for="email" class="input_email">Email
+										<span class="mandatory">*</span>
+									</label>
+										<input type="email" name="input_email" id="email" required="mandatory" placeholder="write your Email">
+								</p>
+						
+								<p>
+									<label for="phone" class="put_phone">Phone
+									</label>
+										<input type="tel" name="put_phone" id="phone" placeholder="write your phone">
+								</p>		
+							
+								<p>
+									<label for="website" class="put_website">Website
+									</label>
+										<input type="url" name="input_website" id="website" placeholder="write the URL of you web">
+								</p>		
+							
+								<p>
+									<label for="subject" class="put_subject">Subject
+										<span class="obligatorio">*</span>
+									</label>
+										<input type="text" name="input_subject" id="subject" required="mandatory" placeholder="write your subject">
+								</p>		
+							
+								<p>
+									<label for="message" class="put_message">Message
+										<span class="mandatory">*</span>
+									</label>                     
+                               		  <textarea name="input_message" class="text_message" id="message" required="mandatory" placeholder="put your comment..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="send_form" id="send"><p>Send</p></button>
+
+								<p class="warning">
+									<span class="mandatory"> * </span>the fields are mandatory.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
+
+</body>
+</html>
